@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="base_url">https://api.flickr.com/services/rest/</string>
+    <string name="search">Search</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="search_result">Search Result</string>
+    <string name="retry">RETRY</string>
+    <string name="gallery">Gallery</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardBackground">#2E2C2C</color>
+    <color name="titleColor">@color/white</color>
+    <color name="dividerColor">#9CBFBBBB</color>
+    <color name="toolBarBackground">#2C2B2B</color>
+</resources>

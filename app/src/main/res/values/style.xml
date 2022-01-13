@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.AppCompat.Text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Header" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Retry" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
