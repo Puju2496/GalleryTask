@@ -32,18 +32,26 @@ class HomeActivity : AppCompatActivity() {
         drawerToggle.syncState()
 
         binding.toolBar.setNavigationOnClickListener {
-            binding.drawer.openDrawer(GravityCompat.START)
+            if (supportFragmentManager.findFragmentByTag(RECENT_PHOTO)?.isVisible == true) {
+                binding.drawer.openDrawer(GravityCompat.START)
+            } else {
+                binding.toolBar.setNavigationIcon(R.drawable.navigation_icon)
+                supportFragmentManager.commit {
+                    replace(R.id.container, RecentPhotosFragment.newInstance(), RECENT_PHOTO)
+                }
+            }
         }
         binding.navigationView.setNavigationItemSelectedListener {
             binding.drawer.closeDrawer(GravityCompat.START)
+            binding.toolBar.setNavigationIcon(R.drawable.back_icon)
             supportFragmentManager.commit {
-                replace(R.id.container, SearchFragment.newInstance())
+                replace(R.id.container, SearchFragment.newInstance(), SEARCH)
             }
             return@setNavigationItemSelectedListener true
         }
 
         supportFragmentManager.commit {
-            add(R.id.container, RecentPhotosFragment.newInstance())
+            add(R.id.container, RecentPhotosFragment.newInstance(), RECENT_PHOTO)
         }
     }
 
@@ -53,6 +61,10 @@ class HomeActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+    }
 
+    companion object {
+        private const val RECENT_PHOTO = "RECENT_PHOTO"
+        private const val SEARCH = "SEARCH"
     }
 }

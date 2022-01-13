@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/back_icon.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/divider.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/navigation_icon.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/retry_icon.xml" value="0.371875" />
